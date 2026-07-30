@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex015.css">
+    <title>Exercicio 15</title>
+
+</head>
+<body>
+    
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section class="container">
+
+        <div>
+            <p>Ano de nascimento: </p>
+            <input type="number" name="ano" id="ano" placeholder="Digite seu ano de nascimento">
+        </div>
+
+        <div>
+            <p>Sexo: </p>
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <div>
+            <input type="button" value="Verificar" id="verificar" onclick="verificarIdade()">
+        </div>
+
+        <div>
+            <p id="resultado">Aqui ira aparecer o texto</p>
+        </div>
+
+        <div id="imagem">
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Nicolas de Sousa.</p>
+    </footer>
+
+    <script src="ex015.js"></script>
+
+</body>
+</html>
