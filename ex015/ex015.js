@@ -9,19 +9,24 @@ function verificarIdade() {
     var imagem = document.getElementById('imagem')
 
     var img = document.createElement('img');
+    img.setAttribute('id', 'foto');
+    img.setAttribute('alt', 'Foto');
 
-    if (anoNascimento > anoAtual || anoNascimento < 0) {
+    if (anoNascimento > anoAtual || anoNascimento < 1900) {
         alert('Ano de nascimento inválido. Por favor, insira um ano válido.');
         return;
     }
     if (sexo[0].checked) {
         resultado.innerHTML = `Você é do sexo masculino e nasceu em ${anoNascimento}.`;
-        img.src = 'cbum.png';
-        imagem.appendChild(img);
-} else{
-    resultado.innerHTML = `Você é do sexo feminino e nasceu em ${anoNascimento}.`;
-    img.src = 'AnadeArmas.png';
-    imagem.appendChild(img);
+        img.setAttribute('src', 'cbum.png');
+        //imagem.appendChild(img);
+}   else{
+        resultado.innerHTML = `Você é do sexo feminino e nasceu em ${anoNascimento}.`;
+        img.setAttribute('src', 'anadearmas.png');
+        //imagem.appendChild(img);
 }
+    imagem.innerHTML = ''; // Limpa a imagem anterior
+    imagem.appendChild(img);
+
 }
 
