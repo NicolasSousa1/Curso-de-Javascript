@@ -15,21 +15,28 @@
     <section class="container">
 
         <div>
-            <p>Número entre 0 e 100:</p> <input type="number" name="numero" id="numero" min="0" max="100">
+            <p>Número entre 1 e 100:</p> <input type="number" name="numero" id="numero">
         </div>
 
         <div>
-            <button onclick="analisar()">Finalizar</button>
+            <button onclick="analisar()">Adicionar</button>
         </div>
 
-        <div id="res"></div>
+        <div>
+            <button onclick="finalizar()">Finalizar</button>
+        </div>
+
+        
 
     </section>
 
+    <section id="res">
+            
+    </section>
 
-        <footer>
-            <p>&copy; Nicolas de Sousa</p>
-        </footer>
+    <footer>
+        <p>&copy; Nicolas de Sousa</p>
+    </footer>
 
         <script src="ex018.js"></script>
 
